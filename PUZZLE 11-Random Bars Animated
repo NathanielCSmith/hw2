@@ -1,0 +1,23 @@
+int numberOfBars=20;
+  void setup() {
+  size(800,800);
+  noStroke();
+  background(0);
+  frameRate(10);
+ }
+
+void draw() {
+  if (numberOfBars < width) {
+    fill(0);
+    rect(numberOfBars,0,5,height);
+    fill(255);
+    rect(numberOfBars,random(height), 5, height);
+    numberOfBars += 20;
+    }else{
+    numberOfBars=20;
+  }
+}
+
+//If I am being totally honest-I didn't figure this out on my own. 
+//I had a gaggle of help and if didn't have help-NO WAY would I have gotten it
+//and if you tested me on this I woudl fail
